@@ -5,7 +5,7 @@ and answers room-availability queries.
 
 ## Build
 
-Requires **JDK 21**.  Maven is bundled via the Maven Wrapper — no local
+Requires **JDK 21+** (tested on JDK 21 and JDK 25). Maven is bundled via the Maven Wrapper — no local
 Maven installation is needed.
 
 ### Run tests
@@ -84,12 +84,12 @@ Search(H1, 365, SGL)
 ./mvnw test -pl .    # same, scoped to this module
 ```
 
-There are **24 tests** in total:
+There are **36 tests** in total:
 
 | Class | Tests |
 |---|---|
-| `AvailabilityServiceTest` | 18 spec examples + 5 edge cases |
-| `CommandParserTest` | 11 parser correctness + validation cases |
+| `AvailabilityServiceTest` | 23 (18 spec examples + 5 edge cases) |
+| `CommandParserTest` | 13 (parser correctness + validation cases) |
 
 ## Project Structure
 
